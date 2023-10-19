@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val rvParent = findViewById<RecyclerView>(R.id.rv_parent)
 
-
+        //Parent/Main Recyclerview
         val parentAdapter = ParentAdapter(giveData(),this)
         rvParent.layoutManager = LinearLayoutManager(this)
         rvParent.adapter = parentAdapter
@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
+    //A function just a prepare a sample data for the whole app
+    //Gave data according to the provided Figma design
     fun giveData() : ArrayList<Data>{
         val list = ArrayList<Data>()
 

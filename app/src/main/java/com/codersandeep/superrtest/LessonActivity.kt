@@ -51,6 +51,7 @@ class LessonActivity : AppCompatActivity(), View.OnClickListener {
         webView.loadUrl(intent.getStringExtra("URL")!!) // Replace with the URL you want to load
     }
 
+    //Interface to send data between webview and android
     class JavaScriptInterface(private val activity: LessonActivity) {
         @JavascriptInterface
         fun logMessage(message: String) {
@@ -65,6 +66,7 @@ class LessonActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    //Go back to mainActivity(homePage)
     override fun onClick(v: View?) {
         startActivity(Intent(this,MainActivity :: class.java))
     }
