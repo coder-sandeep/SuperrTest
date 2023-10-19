@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SuperrTest</string>
+
+    <string name="support_text">Support</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="setting_text">Settings</string>
+    <string name="lessons_text">Lessons</string>
+    <string name="profile_pic">Profile_pic</string>
+    <string name="lesson_name">Lesson name</string>
+    <string name="go_back">Go back to app</string>
+</resources>
